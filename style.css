@@ -1,0 +1,80 @@
+@font-face {
+   font-family: 'hanged';
+   src: url('./fonts/Hanged[editby].ttf') format('truetype');
+   font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+   margin: 0;
+}
+
+body {
+   margin: 0;
+   display: grid;
+   grid-template-rows: 6em auto 300px 6rem 2rem;
+   align-content: flex-start;
+   height: 100%;
+   text-align: center;
+   font-size: 2rem;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+   text-align: center;
+   font-family: 'hanged';
+}
+
+#letters {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 1em 0;
+   font-family: 'hanged';
+}
+
+#letters div {
+   margin: 5px;
+   padding-top: 0.5em;
+   border: 1px solid gray;
+   color: #0043a0;
+   width: 2em;
+   height: 2em;
+   line-height: 0.9;
+   overflow: hidden;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+#letters div:hover {
+   background-color: #00ffff;
+}
+
+#clue p {
+   margin: 0;
+   font-size: 3rem;
+   letter-spacing: 0.5em;
+   font-family: 'Comic Sans MS', sans-serif;
+}
+
+#letters div.used {
+   opacity: 0;
+}
+
+section#image {
+   text-align: center;
+}
+
+section#gameover p {
+   text-align: center;
+   font-size: 1.5rem;
+   display: none;
+   color: #0043a0;
+}
